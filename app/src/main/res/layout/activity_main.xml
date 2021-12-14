@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#DCDCDC"
     android:padding="12dp">
 
     <ListView
         android:id="@+id/main_lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="#DCDCDC"
+        android:divider="@color/white"
         android:dividerHeight="8dp"/>
 
 </LinearLayout>

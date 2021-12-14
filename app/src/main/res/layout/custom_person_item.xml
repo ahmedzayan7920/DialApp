@@ -5,34 +5,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     app:cardCornerRadius="8dp"
-    android:elevation="8dp">
+    app:cardBackgroundColor="#DCDCDC"
+    android:elevation="12dp"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/custom_person_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:scaleType="centerCrop"
             android:layout_marginEnd="12dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/custom_person_tv_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:textColor="@color/black"/>
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/custom_person_tv_number"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textSize="18sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
 
         </LinearLayout>
     </LinearLayout>
