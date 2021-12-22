@@ -7,11 +7,12 @@
     tools:context=".MainActivity"
     android:padding="12dp">
 
-    <ListView
-        android:id="@+id/main_lv"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="@color/white"
-        android:dividerHeight="8dp"/>
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/my_nav"
+        app:defaultNavHost="true"/>
 
 </LinearLayout>
